@@ -2,20 +2,40 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard EDR 06</title>
-
-  <!-- Android / Add to Home Screen -->
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#ffffff">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#005e6a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Guyub Blok G">
+  <title>Guyub — Lorong Blok G</title>
   <style>
-    html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-    iframe { position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background-color: #f4f6f8;
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      border: none;
+    }
   </style>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbw3tQ7rgBBBbA48vez5Jv82PWcfxNVLj3c8nKJ4Ovyfy7J_BsOKwCCNMJckwtez514S/exec"
-          allow="geolocation; microphone; camera"></iframe>
+  <iframe 
+    id="app-frame"
+    src="https://script.google.com/macros/s/AKfycbw3tQ7rgBBBbA48vez5Jv82PWcfxNVLj3c8nKJ4Ovyfy7J_BsOKwCCNMJckwtez514S/exec"
+    allow="camera; microphone; fullscreen"
+    loading="eager">
+  </iframe>
 </body>
 </html>
